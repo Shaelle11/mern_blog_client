@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-text:#111827;
+    --primary-background: #F3E8FF;
+    --gradient-color: linear-gradient(87deg, #3B82F6 2.58%, #D946EF 105.04%);
+    --active-color:#D946EF;
+    --secondary-background:#1F2937;
+    }
+    
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+form{
+    border-radius: 28px;
+    max-width: 500px;
+ display: flex;
+  margin: auto;
+ padding: 24px 24px;
+
+}
+form .title{
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+font-family: Fira Sans Condensed;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 84px; /* 120% */
+letter-spacing: 1.4px;
+background: linear-gradient(94deg, #3B82F6 9.03%, #D946EF 43.88%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+input{
+    width: 100%;
+    padding: 5px 7px;
+    color: var(--primary-text);
+    border: 2px solid #bbb ;
+    height: 15%;
+    background-color: var(--primary-background);
+    border-radius: 5px;
+}
+
+button{
+    width: 50%;
+    border: none;
+    background: linear-gradient(94deg, #3B82F6 9.03%, #D946EF 43.88%);
+background-clip: border-box;
+-webkit-background-clip: border-box;
+color: var(--primary-background);
+height: 12%;
+border-radius: 5px;
+cursor: pointer;
+}
