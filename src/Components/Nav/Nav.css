@@ -67,3 +67,13 @@ padding: 12px 24px;
     background-color: var(--secondary-background);
     color: var(--primary-background);
 }
+
+@media screen and (max-width: 900px) {
+    nav .link{
+display: none;
+    }
+    nav .Register,
+    nav .login{
+        display: flex;
+    }
+}
