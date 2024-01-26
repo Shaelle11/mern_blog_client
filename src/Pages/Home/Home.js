@@ -3,7 +3,7 @@ import Post from "../../Components/Post/Post";
 
 export default function Home(){
     const [posts, setPosts] = useState([]);
-    const url = `${process.env.REACT_APP_API_URL}/post`
+    const url = 'https://youten-studios-server.vercel.app/post'
     useEffect(() => {
      fetch(url).then(response => {
         response.json().then(posts => {

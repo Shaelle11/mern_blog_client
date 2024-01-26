@@ -4,7 +4,7 @@ import './Post.css';
 import { formatISO9075} from "date-fns";
 
 export default function Post({title, summary, cover, content, createdAt, author}){
-    const url = `${process.env.REACT_APP_API_URL}/`
+    const url = 'https://youten-studios-server.vercel.app/'
     return(
         <div className="postcard">
             <div className="postimg">

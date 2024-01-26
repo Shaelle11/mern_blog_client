@@ -10,7 +10,7 @@ export default function Login(){
     const {setUserInfo} = useContext(UserContext);
 
 
-    const url = `${process.env.REACT_APP_API_URL}/login`
+    const url = 'https://youten-studios-server.vercel.app/login'
    async function Login(ev){
         ev.preventDefault();
 const response = await fetch(url, {
