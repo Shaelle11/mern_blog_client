@@ -6,7 +6,7 @@ export default function Register(){
     const [password, setIsPassword] = useState("");
     const [email, setIsEmail] = useState("");
 
-    const url = `${process.env.REACT_APP_API_URL}/register`
+    const url = 'https://youten-studios-server.vercel.app/register',
    async function Register(ev){
 ev.preventDefault();
 const response = await fetch(url, {
