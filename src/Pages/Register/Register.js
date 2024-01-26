@@ -6,9 +6,10 @@ export default function Register(){
     const [password, setIsPassword] = useState("");
     const [email, setIsEmail] = useState("");
 
-    const url = 'https://youten-studios-server.vercel.app/register',
+    const url = 'https://youten-studios-server.vercel.app/'
    async function Register(ev){
 ev.preventDefault();
+
 const response = await fetch(url, {
     method: 'POST',
     body: JSON.stringify({username, email, password}),
