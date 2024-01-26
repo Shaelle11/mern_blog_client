@@ -9,9 +9,11 @@ export default function Login(){
     const [redirect, setRedirect] = useState(false);
     const {setUserInfo} = useContext(UserContext);
 
+
+    const url = `${process.env.REACT_APP_API_URL}/login`
    async function Login(ev){
         ev.preventDefault();
-const response = await fetch('http://localhost:4000/login', {
+const response = await fetch(url, {
     method: 'POST',
     body: JSON.stringify({username, password}),
     headers: {'Content-Type': 'application/json'},

@@ -4,10 +4,11 @@ import './Post.css';
 import { formatISO9075} from "date-fns";
 
 export default function Post({title, summary, cover, content, createdAt, author}){
+    const url = `${process.env.REACT_APP_API_URL}/`
     return(
         <div className="postcard">
             <div className="postimg">
-                <img src={'http://localhost:4000/'+ cover} alt="blog image"/>
+                <img src={url + cover} alt="blog image"/>
             </div>
             <div className="posttext">
 <h1 className="posttitle">

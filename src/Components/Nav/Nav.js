@@ -6,8 +6,9 @@ import { UserContext } from "../../Pages/UserContext/UserContent";
 
 export default function Nav() {
 const {setUserInfo, userInfo} = useContext(UserContext);
+const url = `${process.env.REACT_APP_API_URL}/profile`
     useEffect(() => {
-        fetch('http://localhost:4000/profile', {
+        fetch(url, {
             credentials:'include'
         }).then(response =>{
 response.json().then(userInfo => {
@@ -16,7 +17,8 @@ setUserInfo(userInfo);
         })
     }, []);
     function Logout(){
-        fetch('http://localhost:4000/logout', {
+        const url = `${process.env.REACT_APP_API_URL}/logout`
+        fetch(url, {
             credentials: 'include',
             method: 'POST',
         });
