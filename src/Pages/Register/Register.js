@@ -6,16 +6,16 @@ export default function Register(){
     const [password, setIsPassword] = useState("");
     const [email, setIsEmail] = useState("");
 
-    const url = 'https://youten-studios-server.vercel.app/register'
+    const url = ['https://youten-studios-server.vercel.app/register' && 'http://localhost:4000/register' ]
    async function Register(ev){
 ev.preventDefault();
 
 const response = await fetch(url, {
-    method: 'POST',
+    method: ['POST', 'GET', 'PUT', 'DELETE'],
     body: JSON.stringify({username, email, password}),
     headers:{"Content-Type": 'application/json'},
 });
-if (response.status === 200){
+if (response.status === 200 || response.status === 204){
     alert('registration successful');
 } else{
 alert('Registration failedl');
