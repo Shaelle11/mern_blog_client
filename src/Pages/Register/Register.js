@@ -6,7 +6,7 @@ export default function Register(){
     const [password, setIsPassword] = useState("");
     const [email, setIsEmail] = useState("");
 
-    const url = ['https://youten-studios-server.vercel.app/register', 'http://localhost:4000/register' ]
+    const url = 'https://youten-studios-server.vercel.app/register';
    async function Register(ev){
 ev.preventDefault();
 
