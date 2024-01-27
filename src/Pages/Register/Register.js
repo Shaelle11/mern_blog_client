@@ -9,11 +9,11 @@ export default function Register(){
     const url = 'https://youten-studios-server.vercel.app/register';
    async function Register(ev){
 ev.preventDefault();
-
 const response = await fetch(url, {
     method: 'POST',
     body: JSON.stringify({username, email, password}),
     headers:{"Content-Type": 'application/json'},
+    credentials: "include",
 });
 if (response.status === 200 || response.status === 204){
     alert('registration successful');
