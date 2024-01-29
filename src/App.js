@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import { UserContextProvider } from './Pages/UserContext/UserContent';
 import CreatePost from './Pages/CreatePost/CreatePost';
+import PostPage from './Pages/PostPage/PostPage';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
      <Route path={'/Login'} element={ <Login />} />
    <Route path={'/Register'} element={<Register />} />
    <Route path='/create' element={<CreatePost/>}/>
-      </Route>
+   <Route path="/post/:id" element={<PostPage/>}/>
+      </Route> 
     </Routes>
    </UserContextProvider>
  

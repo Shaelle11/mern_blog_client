@@ -15,10 +15,21 @@
     box-sizing: border-box;
 }
 
-.home{
+.postpage .image{
+    max-height: 200px;
+    overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1440px;
-    padding: 24px;
+}
+.postpage .image img{
+    object-fit: cover;
+    object-position: center center;
+}
+
+.postpage a{
+    color: var(--primary-text);
+    text-decoration: underline;
+}
+
+.postpage h1{
+    text-align: center;
 }
