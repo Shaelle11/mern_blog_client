@@ -15,10 +15,17 @@
     box-sizing: border-box;
 }
 
+.postpage{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 0.3rem;
+}
 .postpage .image{
     max-height: 200px;
     overflow: hidden;
     display: flex;
+   justify-content: center;
 }
 .postpage .image img{
     object-fit: cover;
@@ -32,4 +39,35 @@
 
 .postpage h1{
     text-align: center;
+}
+
+.postpage time{
+    text-align: center;
+    display: block;
+    font-size: .7rem;
+    color: var(--primary-text);
+}
+
+.postpage .author{
+    text-align: center;
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary-text);
+}
+
+.postpage div.content p{
+    line-height: 1.6rem;
+}
+.postpage .edit-row{
+   text-align: center;
+   margin-bottom: 1rem;
+
+}
+.postpage a.edit-btn{
+  
+    background-color: var(--primary-text);
+    text-decoration: none;
+    color: var(--primary-background);
+    padding: 5px 15px 9px 15px;
 }

@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from '../../Images/logo.svg';
 import "./Nav.css"
-import { UserContext } from "../../Pages/UserContext/UserContent";
+import { UserContext } from "../../Pages/UserContext/UserContext";
 
 export default function Nav() {
 const {setUserInfo, userInfo} = useContext(UserContext);

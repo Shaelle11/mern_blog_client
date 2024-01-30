@@ -5,7 +5,7 @@ import Register from './Pages/Register/Register';
 import Login from './Pages/Login/Login';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home';
-import { UserContextProvider } from './Pages/UserContext/UserContent';
+import { UserContextProvider } from './Pages/UserContext/UserContext';
 import CreatePost from './Pages/CreatePost/CreatePost';
 import PostPage from './Pages/PostPage/PostPage';
 
