@@ -8,7 +8,7 @@ export default function PostPage(){
     const [postInfo, setPostInfo] = useState(null);
     const {userInfo} = useContext(UserContext); 
     const {id}= useParams();
-    const url = `https://youten-studios-server.vercel.app/post/${id}`;
+    const url = `https://mern-blog-server-psi.vercel.app//post/${id}`;
    
     useEffect (() => {
        fetch(url).then(response => {
@@ -32,7 +32,7 @@ export default function PostPage(){
            </div>
              )}
        <div className="image">
-       <img src={`https://youten-studios-server.vercel.app/${postInfo.cover}`} alt="post image"/>
+       <img src={`https://mern-blog-server-psi.vercel.app//${postInfo.cover}`} alt="post image"/>
        </div>
 
        <div className="content" dangerouslySetInnerHTML={{__html:postInfo.content}} />

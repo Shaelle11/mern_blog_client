@@ -28,7 +28,7 @@ export default function CreatePost(){
     const [files, setFiles] = useState("");
     const[redirect, setRedirect] = useState("");
 
-    const url = 'https://youten-studios-server.vercel.app/post'
+    const url = 'https://mern-blog-server-psi.vercel.app/post'
   async function createNewPost(ev){
         const data = new FormData();
         data.set('title', title);
