@@ -7,7 +7,7 @@ export default function Home(){
   const [currentSlide, setCurrentSlide] = useState([]);
   const [posts, setPosts] = useState([]);
   
-  const url = 'https://mern-blog-server-psi.vercel.app//post';
+  const url = 'https://mern-blog-server-psi.vercel.app/post';
 
   useEffect(() => {
 fetch(url).then(response =>{
