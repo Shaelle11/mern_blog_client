@@ -8,7 +8,7 @@ export default function PostPage(){
     const [postInfo, setPostInfo] = useState(null);
     const {userInfo} = useContext(UserContext); 
     const {id}= useParams();
-    const url = `https://mern-blog-server-psi.vercel.app//post/${id}`;
+    const url = `https://mern-blog-server-psi.vercel.app/post/${id}`;
    
     useEffect (() => {
        fetch(url).then(response => {
