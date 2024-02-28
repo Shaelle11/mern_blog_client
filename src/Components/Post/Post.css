@@ -17,10 +17,10 @@
 
 .postcard{
     border-radius: 28px;
-    width: 300px;
+    width: 400px;
  display: flex;
  flex-direction: column;
- padding: 24px 24px;
+ padding: 24px;
  align-items: center;
  justify-content: center;
  flex-shrink: 0;
@@ -30,7 +30,8 @@
     width: 80%;
 }
 .postimg{
-  width: 80%;
+padding: 3rem;
+  width: 100%;
   height: auto;
 
 }

@@ -6,7 +6,7 @@ import { UserContext } from "../../Pages/UserContext/UserContext";
 
 export default function Nav() {
 const {setUserInfo, userInfo} = useContext(UserContext);
-const url = 'https://mern-blog-server-psi.vercel.app/profile'
+const url = 'http://localhost:4000/profile'
     useEffect(() => {
         fetch(url, {
             credentials:'include'
@@ -17,7 +17,7 @@ setUserInfo(userInfo);
         })
     }, []);
     function Logout(){
-        const url = 'https://mern-blog-server-psi.vercel.app/logout'
+        const url = 'http://localhost:4000/logout'
         fetch(url, {
             credentials: 'include',
             method: 'POST',

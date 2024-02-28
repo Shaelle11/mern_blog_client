@@ -4,7 +4,7 @@ import { formatISO9075} from "date-fns";
 import { Link } from "react-router-dom";
 
 export default function Post({_id, title, summary, cover, content, createdAt, author}){
-    const url = 'https://mern-blog-server-psi.vercel.app/'
+    const url = 'http://localhost:4000/'
     return(
         <div className="postcard">
             <div className="postimg">

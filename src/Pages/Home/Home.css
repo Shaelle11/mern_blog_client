@@ -18,7 +18,7 @@
 .home{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 1440px;
     padding: 24px;
 }

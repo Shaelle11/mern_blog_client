@@ -6,7 +6,7 @@ export default function Register(){
     const [password, setIsPassword] = useState("");
     const [email, setIsEmail] = useState("");
 
-    const url = 'https://mern-blog-server-psi.vercel.app/register';
+    const url = 'http://localhost:4000/register';
    async function Register(ev){
 ev.preventDefault();
 const response = await fetch(url, {
